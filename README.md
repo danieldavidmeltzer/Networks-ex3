@@ -34,11 +34,11 @@ and run the client:
 python3 udp_client.py 127.0.0.1 -c 10 -s 10 
 
 the 20 packets(10 request & reply)
-![Screenshot 2024-03-05 at 2.32.25](https://hackmd.io/_uploads/B1F4OkVpT.png)
+![img.png](img.png)
 
 let's show the 3rd packet request:
 
-![Screenshot 2024-03-05 at 2.33.53](https://hackmd.io/_uploads/SJIpukNpa.png)
+![img_1.png](img_1.png)
 
 we can see the that the first byte: 0(request)
 and the next 4 bytes are 00 00 00 02 (hex), 
@@ -48,8 +48,7 @@ after that the data is 10 times 30(in hex) which is the ascii value of '0' which
 
 the reply is:
 
-
-![Screenshot 2024-03-05 at 2.43.20](https://hackmd.io/_uploads/HJEhqJ4aT.png)
+![img_2.png](img_2.png)
 
 we can see the that the first byte: 1(request)
 and the next 4 bytes are 00 00 00 02 (hex), 
