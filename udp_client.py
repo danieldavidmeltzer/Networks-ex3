@@ -39,7 +39,7 @@ def handle_ping(address, client_socket, ping_request, timeout):
             else:
                 print(f"{len(message)} bytes from {agent_ip}:"
                       f" seq={ping_request.sequence}"
-                      f" rtt={time.time() - sent_time:.3f}ms")
+                      f" rtt={(time.time() - sent_time)*1000:.3f}ms")
                 return True
     except socket.timeout:
         print(f"request timeout for icmp_seq {ping_request.sequence}")
